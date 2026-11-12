@@ -7,6 +7,7 @@
   "source": "https://github.com/tokeny-ai/tokenyUI",
   "official": false,
   "license": "MIT",
+  "sha256": "231BC7006B5B9A5D1D6AE5757B591087115710805F728070721FA8F7F3DCBEBC",
   "install": "dsh plugin --profile desktop add https://github.com/tokeny-ai/tokenyUI/releases/download/v0.2.2-rc.1-tokeny.7/tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz",
   "screenshots": [
     "packages/client/tokeny-ui/src/desktop/assets/hero.png",

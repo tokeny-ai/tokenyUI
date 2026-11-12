@@ -30,7 +30,7 @@ Use the matching DeepSeek Harness desktop `0.2.2-rc.1` runtime. The CLI bundled 
 dsh plugin --profile desktop add https://github.com/tokeny-ai/tokenyUI/releases/download/v0.2.2-rc.1-tokeny.7/tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz
 ```
 
-Restart Harness after installation. The [v0.2.2-rc.1-tokeny.7 release](https://github.com/tokeny-ai/tokenyUI/releases/tag/v0.2.2-rc.1-tokeny.7) contains the tarball and checksums. To remove the layout bundle, run `dsh plugin --profile desktop remove @tokeny-ai/dsh-client-tokeny-ui` and restart Harness.
+Restart Harness after installation. The [v0.2.2-rc.1-tokeny.7 release](https://github.com/tokeny-ai/tokenyUI/releases/tag/v0.2.2-rc.1-tokeny.7) contains the tarball and a SHA-256 checksum asset. To remove the layout bundle, run `dsh plugin --profile desktop remove @tokeny-ai/dsh-client-tokeny-ui` and restart Harness.
 
 ## Source and compatibility
 
