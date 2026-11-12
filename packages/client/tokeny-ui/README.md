@@ -13,13 +13,28 @@ English | [中文](README.zh.md)
 
 ## Screenshots
 
-![Tokeny workspace shell](src/desktop/assets/hero.png)
+<p align="center">
+  <img src="src/desktop/assets/hero.png" alt="Tokeny workspace shell" width="920" />
+</p>
 
-![Project switcher](src/desktop/assets/project-switcher.png)
-
-![Themes and appearance](src/desktop/assets/themes.png)
-
-![Input companion menu](src/desktop/assets/pet.png)
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="src/desktop/assets/project-switcher.png" alt="Project switcher" width="100%" />
+      <br /><sub>Project switcher</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="src/desktop/assets/themes.png" alt="Themes and appearance" width="100%" />
+      <br /><sub>Themes and appearance</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="src/desktop/assets/pet.png" alt="Input companion menu" width="55%" />
+      <br /><sub>Input companion menu</sub>
+    </td>
+  </tr>
+</table>
 
 ## Table of Contents
 

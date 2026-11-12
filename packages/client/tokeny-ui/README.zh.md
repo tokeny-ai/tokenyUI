@@ -13,13 +13,28 @@ kind: "package-bundle"
 
 ## 截图
 
-![Tokeny 工作区外壳](src/desktop/assets/hero.png)
+<p align="center">
+  <img src="src/desktop/assets/hero.png" alt="Tokeny 工作区外壳" width="920" />
+</p>
 
-![项目切换器](src/desktop/assets/project-switcher.png)
-
-![主题与外观](src/desktop/assets/themes.png)
-
-![输入框宠物菜单](src/desktop/assets/pet.png)
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="src/desktop/assets/project-switcher.png" alt="项目切换器" width="100%" />
+      <br /><sub>项目切换器</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="src/desktop/assets/themes.png" alt="主题与外观" width="100%" />
+      <br /><sub>主题与外观</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="src/desktop/assets/pet.png" alt="输入框宠物菜单" width="55%" />
+      <br /><sub>输入框宠物菜单</sub>
+    </td>
+  </tr>
+</table>
 
 ## Table of Contents
 

@@ -7,30 +7,44 @@ Tokeny-style workspace UI for DeepSeek Harness desktop. The plugin keeps the nat
 > **Community plugin:** tokenyUI is published by Tokeny AI and is not an official DeepSeek plugin. It does not change the DeepSeek logo or send model requests of its own.
 
 <p align="center">
-  <img src="packages/client/tokeny-ui/src/desktop/assets/hero.png" alt="tokenyUI workspace" width="960" />
+  <img src="packages/client/tokeny-ui/src/desktop/assets/hero.png" alt="tokenyUI workspace" width="920" />
 </p>
 
 ## What it adds
 
-| Area | Behavior |
-| --- | --- |
-| Project bar | Switch or add projects from the native title bar. |
-| Workspace | Browse the active project's files and open native previews. |
-| Sessions | The Workspace tab shows only sessions belonging to the selected project. |
-| Appearance | Choose Tokeny palettes plus Light, Dark, or System mode. |
-| Input companion | Choose one of seven local sprite pets and control sleep, walking, and visibility. |
+<table>
+  <thead>
+    <tr><th align="left">Area</th><th align="left">Behavior</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Project bar</td><td>Switch or add projects from the native title bar.</td></tr>
+    <tr><td>Workspace</td><td>Browse the active project's files and open native previews.</td></tr>
+    <tr><td>Sessions</td><td>The Workspace tab shows only sessions belonging to the selected project.</td></tr>
+    <tr><td>Appearance</td><td>Choose Tokeny palettes plus Light, Dark, or System mode.</td></tr>
+    <tr><td>Input companion</td><td>Choose one of seven local sprite pets and control sleep, walking, and visibility.</td></tr>
+  </tbody>
+</table>
 
-<p align="center">
-  <img src="packages/client/tokeny-ui/src/desktop/assets/project-switcher.png" alt="Project switcher" width="760" />
-</p>
+## Screenshots
 
-<p align="center">
-  <img src="packages/client/tokeny-ui/src/desktop/assets/themes.png" alt="Themes and appearance" width="620" />
-</p>
-
-<p align="center">
-  <img src="packages/client/tokeny-ui/src/desktop/assets/pet.png" alt="Input companion" width="640" />
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="packages/client/tokeny-ui/src/desktop/assets/project-switcher.png" alt="Project switcher" width="100%" />
+      <br /><sub>Project switcher</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="packages/client/tokeny-ui/src/desktop/assets/themes.png" alt="Themes and appearance" width="100%" />
+      <br /><sub>Themes and appearance</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="packages/client/tokeny-ui/src/desktop/assets/pet.png" alt="Input companion menu" width="55%" />
+      <br /><sub>Input companion menu</sub>
+    </td>
+  </tr>
+</table>
 
 ## Install the desktop release
 
