@@ -1,0 +1,55 @@
+.rail {
+  position: relative;
+  flex: 0 0 64px;
+  height: 64px;
+  width: calc(100% - var(--dsh-composer-side-clearance, 16px) * 2);
+  max-width: var(--dsh-composer-card-max-width, 952px);
+  margin: 0 auto calc(-1 * var(--dsh-composer-stack-gap, 6px));
+  pointer-events: none;
+}
+:global([data-phase='hero']) .rail,
+:global([data-content-phase='hero']) .rail { margin-bottom: -8px; }
+.position {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 64px;
+  height: 64px;
+  pointer-events: none;
+  transform: translate3d(16px, 0, 0);
+}
+.pet {
+  display: block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--dsw-alias-label-primary);
+  cursor: pointer;
+  user-select: none;
+  pointer-events: auto;
+  -webkit-app-region: no-drag;
+}
+.pet:focus-visible { outline: 2px solid var(--dsw-alias-state-business-primary); outline-offset: 2px; }
+.bounce { display: block; transform-origin: 50% 92%; }
+.bounce[data-bounce] { animation: petBounce 420ms cubic-bezier(.22, 1, .36, 1); }
+@keyframes petBounce {
+  0%, 100% { transform: scale(1); }
+  22% { transform: scale(1.07, .93) translateY(1px); }
+  54% { transform: scale(.97, 1.04) translateY(-3px); }
+  78% { transform: scale(1.02, .98); }
+}
+.sleeping { position: absolute; top: 0; right: 0; font-size: 12px; font-weight: 500; color: var(--dsw-alias-state-business-primary); }
+.settings { display: flex; flex-direction: column; gap: 14px; padding-top: 20px; border-top: 1px solid var(--dsw-alias-border-l2); }
+.settings h3 { margin: 0; font-size: 14px; font-weight: 600; }
+.option { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--dsw-alias-label-primary); }
+.option select { margin-left: auto; min-width: 150px; padding: 6px 10px; border: 1px solid var(--dsw-alias-border-l1); border-radius: 6px; background: var(--dsw-alias-bg-base); color: var(--dsw-alias-label-primary); font: inherit; }
+.option input { accent-color: var(--dsw-alias-state-business-primary); }
+.option input:focus-visible,
+.option select:focus-visible { outline: 2px solid var(--dsw-alias-state-business-primary); outline-offset: 2px; }
+.hint, .error { margin: 0; color: var(--dsw-alias-label-secondary); font-size: 12px; line-height: 1.6; }
+.error button { font: inherit; color: var(--dsw-alias-state-business-primary); border: 0; background: transparent; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .bounce[data-bounce] { animation: none; } }

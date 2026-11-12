@@ -1,0 +1,25 @@
+:global([data-tokeny-composer-stack]) {
+  position: relative;
+}
+
+:global([data-tokeny-composer-stack]) > :global([data-tokeny-composer-controls]) {
+  position: absolute;
+  top: var(--tokeny-composer-controls-top, 0px);
+  left: var(--tokeny-composer-controls-left, 0px);
+  width: var(--tokeny-composer-controls-width, 100%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 12px 0;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  z-index: 2;
+}
+
+:global([data-tokeny-composer-controls]) > button {
+  min-width: 0;
+  max-width: 100%;
+}
+
+:global([data-tokeny-composer-stack]) :global([data-tokeny-composer-card]) {
+  padding-top: calc(8px + var(--tokeny-composer-controls-height, 36px));
+}

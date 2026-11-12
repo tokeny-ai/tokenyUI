@@ -1,0 +1,7 @@
+- id: ui-layout
+  disabled: true
+- id: ui-sidebar
+  disabled: true
+- insert:
+    - id: tokenyUI
+      name: '@tokeny-ai/dsh-client-tokeny-ui'
