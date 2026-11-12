@@ -2,5 +2,5 @@
 # side as of the last confirmed-consistent state. Both languages carry equal authority;
 # after editing either side, bring the other along and re-record with:
 #   pnpm run verify-translation-pairing --write packages/client/tokeny-ui/src/desktop/README.md
-README.md: c8035ea0ef5775e49aaaea33b6d0287f108f174e
-README.zh.md: 5a14150813e9b5236c57522f347a9ddd7148f687
+README.md: de0bf94d53d2bdab455a66663d2c76192612874a
+README.zh.md: e61dbab0e8659f5b426da1c96bc19b0ded9403b0

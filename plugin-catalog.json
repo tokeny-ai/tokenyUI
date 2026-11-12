@@ -1,0 +1,17 @@
+{
+  "id": "@tokeny-ai/dsh-client-tokeny-ui",
+  "name": "tokenyUI",
+  "version": "0.2.2-rc.1-tokeny.7",
+  "host": "DeepSeek Harness desktop 0.2.2-rc.1",
+  "release": "https://github.com/tokeny-ai/tokenyUI/releases/tag/v0.2.2-rc.1-tokeny.7",
+  "source": "https://github.com/tokeny-ai/tokenyUI",
+  "official": false,
+  "license": "MIT",
+  "install": "dsh plugin --profile desktop add https://github.com/tokeny-ai/tokenyUI/releases/download/v0.2.2-rc.1-tokeny.7/tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz",
+  "screenshots": [
+    "packages/client/tokeny-ui/src/desktop/assets/hero.png",
+    "packages/client/tokeny-ui/src/desktop/assets/project-switcher.png",
+    "packages/client/tokeny-ui/src/desktop/assets/themes.png",
+    "packages/client/tokeny-ui/src/desktop/assets/pet.png"
+  ]
+}

@@ -9,7 +9,17 @@ English | [中文](README.zh.md)
 
 ## Summary
 
-`tokenyUI` gives DeepSeek Harness desktop `0.2.2-rc.1` a top project switcher, a left navigation sidebar, and a resizable workspace file tree. It includes 15 Tokeny themes and seven input companions. The sidebar retains the official DeepSeek whale logo and wordmark. Existing conversations, plugin panels, settings, and file previews use their native Harness services and renderers.
+`tokenyUI` gives DeepSeek Harness desktop `0.2.2-rc.1` a top project switcher, a left navigation sidebar, and a resizable workspace file tree. It includes 15 Tokeny themes and seven input companions. The sidebar retains the official DeepSeek whale logo and wordmark. Existing conversations, plugin panels, settings, and file previews use their native Harness services and renderers. This is a community plugin published by Tokeny AI; it is not an official DeepSeek plugin.
+
+## Screenshots
+
+![Tokeny workspace shell](assets/hero.png)
+
+![Project switcher](assets/project-switcher.png)
+
+![Themes and appearance](assets/themes.png)
+
+![Input companion menu](assets/pet.png)
 
 ## Table of Contents
 
@@ -27,10 +37,12 @@ English | [中文](README.zh.md)
 Install the desktop tarball with the CLI bundled in the matching desktop release. From the folder containing the tarball, run this PowerShell command:
 
 ```powershell
-& "$env:LOCALAPPDATA\Programs\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add .\tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.6.tgz
+& "$env:LOCALAPPDATA\Programs\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add .\tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz
 ```
 
 Restart DeepSeek Harness after installation. Select or add a project from the top bar; the left file tree follows the selected session's working directory. File selection opens the existing Harness preview panel. The sidebar's Workspace tab lists and searches only the selected project's sessions, with native session menus, rename, pin, and archive actions. Other sidebar panels hide this list. The sidebar retains the account menu and plugin navigation.
+
+The latest desktop tarball is available from the [tokenyUI GitHub Releases](https://github.com/tokeny-ai/tokenyUI/releases). The release asset is compatible with the matching Harness desktop `0.2.2-rc.1` runtime. Keep the original DeepSeek logo and native window controls when evaluating the layout; the plugin does not replace application branding.
 
 The new-conversation project folder and mode controls appear inside the input card, above the text area. Their native menus and behavior remain available, and the input companion stays above the card.
 
@@ -77,7 +89,7 @@ None; this package does not assemble or send model requests.
 
 <a id="known-limitations-and-deferred-work"></a>
 
-- This artifact targets Harness desktop `0.2.2-rc.1`; the `0.1.0-rc.5` web artifact uses different client APIs.
+- This artifact targets Harness desktop `0.2.2-rc.1`; the legacy `0.1.0-rc.5` web artifact uses different client APIs.
 - The file tree needs an active session with a working directory. Directory access and previews follow the native Harness service's permissions and supported formats.
 - Directory contents refresh on request. Column geometry and expanded folders reset when the plugin reloads.
 - Palette and companion preferences belong to the current browser origin. If browser storage refuses a write, the current selection remains active and the appearance panel offers a save retry.

@@ -9,7 +9,17 @@ kind: "package-bundle"
 
 ## Summary
 
-`tokenyUI` 为 Harness 提供 Tokeny 风格的工作空间：居中的项目切换器、窄活动侧栏，以及可调整宽度的左侧文件与会话面板。可以按名称或路径搜索项目、预览文本文件，并查找、重命名或归档当前项目的会话。Harness 现有的对话、工具详情、设置和插件面板继续通过各自插槽提供。此可选插件包安装到 `web` 配置档，重启后生效。
+`tokenyUI` 为 Harness 提供 Tokeny 风格的工作空间：居中的项目切换器、窄活动侧栏，以及可调整宽度的左侧文件与会话面板。可以按名称或路径搜索项目、预览文本文件，并查找、重命名或归档当前项目的会话。Harness 现有的对话、工具详情、设置和插件面板继续通过各自插槽提供。此包同时包含 Web 配置档适配器和桌面版组合包适配器。此插件由 Tokeny AI 社区发布，不是 DeepSeek 官方插件。
+
+## 截图
+
+![Tokeny 工作区外壳](src/desktop/assets/hero.png)
+
+![项目切换器](src/desktop/assets/project-switcher.png)
+
+![主题与外观](src/desktop/assets/themes.png)
+
+![输入框宠物菜单](src/desktop/assets/pet.png)
 
 ## Table of Contents
 
@@ -27,7 +37,7 @@ kind: "package-bundle"
 配合匹配的 Harness `0.1.0-rc.5` 安装使用提供的压缩包。在压缩包所在目录执行以下命令，将其安装到配置档：
 
 ```sh
-dsh plugin --profile web add ./tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.6.tgz
+dsh plugin --profile web add ./tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz
 ```
 
 安装后重启 Harness Web。插件包的配置层替换默认布局和侧栏，无需修改核心会话插件。首次安装可能下载 npm 依赖。选择**添加项目**，输入 Harness 主机上文件夹的绝对路径并打开项目。文件树展示真实目录，选择 UTF-8 文本文件即可打开只读预览。

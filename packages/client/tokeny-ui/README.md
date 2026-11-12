@@ -9,7 +9,17 @@ English | [中文](README.zh.md)
 
 ## Summary
 
-`tokenyUI` gives Harness a Tokeny-style workspace: a centered project switcher, a slim activity sidebar, and a resizable left panel for files and sessions. Search projects by name or path, preview text files, and find, rename, or archive the current project's sessions. Existing Harness conversations, tool details, settings, and plugin panels remain available through their slots. The optional package is installed into the `web` profile and takes effect after a restart.
+`tokenyUI` gives Harness a Tokeny-style workspace: a centered project switcher, a slim activity sidebar, and a resizable left panel for files and sessions. Search projects by name or path, preview text files, and find, rename, or archive the current project's sessions. Existing Harness conversations, tool details, settings, and plugin panels remain available through their slots. The package includes a Web profile adapter and a desktop bundle adapter. It is a community plugin published by Tokeny AI, not an official DeepSeek plugin.
+
+## Screenshots
+
+![Tokeny workspace shell](src/desktop/assets/hero.png)
+
+![Project switcher](src/desktop/assets/project-switcher.png)
+
+![Themes and appearance](src/desktop/assets/themes.png)
+
+![Input companion menu](src/desktop/assets/pet.png)
 
 ## Table of Contents
 
@@ -27,7 +37,7 @@ English | [中文](README.zh.md)
 Use the supplied tarball with the matching Harness `0.1.0-rc.5` installation. From the folder containing the tarball, install it into the profile:
 
 ```sh
-dsh plugin --profile web add ./tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.6.tgz
+dsh plugin --profile web add ./tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz
 ```
 
 Restart Harness Web after installation. The package's profile layer replaces the default layout and sidebar; it does not require edits to the core conversation plugins. The first installation can download npm dependencies. Select **Add project**, enter an absolute folder path on the Harness host, and open the project. The file tree lists real directories; select a UTF-8 text file to open its read-only preview.

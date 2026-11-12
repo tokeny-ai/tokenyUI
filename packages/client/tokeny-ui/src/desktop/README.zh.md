@@ -9,7 +9,17 @@ kind: "package-bundle"
 
 ## Summary
 
-`tokenyUI` 为 DeepSeek Harness 桌面版 `0.2.2-rc.1` 加入顶部项目切换器、左侧导航栏，以及可调整宽度的工作区文件树，并提供 15 套 Tokeny 主题和七种输入框宠物。侧栏保留官方 DeepSeek 鲸鱼 logo 和字标。现有对话、插件面板、设置和文件预览使用 Harness 原生服务与渲染器。
+`tokenyUI` 为 DeepSeek Harness 桌面版 `0.2.2-rc.1` 加入顶部项目切换器、左侧导航栏，以及可调整宽度的工作区文件树，并提供 15 套 Tokeny 主题和七种输入框宠物。侧栏保留官方 DeepSeek 鲸鱼 logo 和字标。现有对话、插件面板、设置和文件预览使用 Harness 原生服务与渲染器。此插件由 Tokeny AI 社区发布，不是 DeepSeek 官方插件。
+
+## 截图
+
+![Tokeny 工作区外壳](assets/hero.png)
+
+![项目切换器](assets/project-switcher.png)
+
+![主题与外观](assets/themes.png)
+
+![输入框宠物菜单](assets/pet.png)
 
 ## Table of Contents
 
@@ -27,10 +37,12 @@ kind: "package-bundle"
 使用匹配桌面版本自带的 CLI 安装桌面版压缩包。在压缩包所在文件夹中运行以下 PowerShell 命令：
 
 ```powershell
-& "$env:LOCALAPPDATA\Programs\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add .\tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.6.tgz
+& "$env:LOCALAPPDATA\Programs\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add .\tokeny-ai-dsh-client-tokeny-ui-0.2.2-rc.1-tokeny.7.tgz
 ```
 
 安装后重启 DeepSeek Harness。在顶部选择或添加项目，左侧文件树随所选会话的工作目录变化。选择文件会打开原有 Harness 预览面板。侧栏“工作空间”标签只列出并搜索所选项目的会话，提供原生会话菜单、重命名、置顶和归档操作；切换到其他侧栏面板时隐藏此列表。侧栏保留账号菜单及插件导航。
+
+最新桌面压缩包发布在 [tokenyUI GitHub Releases](https://github.com/tokeny-ai/tokenyUI/releases)。发布资产与匹配的 Harness 桌面版 `0.2.2-rc.1` 运行时兼容。评估布局时会保留原 DeepSeek logo 和原生窗口控件；插件不会替换应用品牌。
 
 新会话的项目文件夹和模式控件显示在输入卡片内部、文本区上方，保留原生菜单和行为。输入框宠物位于卡片上方。
 
@@ -77,7 +89,7 @@ None；此包不组装或发送模型请求。
 
 <a id="known-limitations-and-deferred-work"></a>
 
-- 此构建产物面向 Harness 桌面版 `0.2.2-rc.1`；`0.1.0-rc.5` Web 产物使用不同的客户端 API。
+- 此构建产物面向 Harness 桌面版 `0.2.2-rc.1`；旧版 `0.1.0-rc.5` Web 产物使用不同的客户端 API。
 - 文件树需要具有工作目录的活动会话。目录访问与预览遵循 Harness 原生服务的权限和格式支持。
 - 目录内容按需刷新。插件重新加载后，列宽和已展开目录恢复初始状态。
 - 配色和宠物偏好属于当前浏览器源。浏览器存储拒绝写入时，当前选择继续生效，外观面板提供重试保存操作。
