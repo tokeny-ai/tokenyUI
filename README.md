@@ -32,6 +32,8 @@ dsh plugin --profile desktop add https://github.com/tokeny-ai/tokenyUI/releases/
 
 Restart Harness after installation. The [v0.2.2-rc.1-tokeny.7 release](https://github.com/tokeny-ai/tokenyUI/releases/tag/v0.2.2-rc.1-tokeny.7) contains the tarball and a SHA-256 checksum asset. To remove the layout bundle, run `dsh plugin --profile desktop remove @tokeny-ai/dsh-client-tokeny-ui` and restart Harness.
 
+Use the release `.tgz` URL above for installation. A repository URL such as `https://github.com/tokeny-ai/tokenyUI` is a Git source; pnpm may translate it to `git+ssh://git@github.com/...` and fail when the user has no GitHub SSH key.
+
 ## Source and compatibility
 
 The source package is under [`packages/client/tokeny-ui`](packages/client/tokeny-ui). The desktop adapter targets DeepSeek Harness desktop `0.2.2-rc.1`; the legacy Web adapter targets the separate `0.1.0-rc.5` client APIs. Read the [desktop guide](packages/client/tokeny-ui/src/desktop/README.md) for behavior, limitations, and verification details.

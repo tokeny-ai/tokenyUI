@@ -14,6 +14,8 @@ dsh plugin --profile desktop add https://github.com/tokeny-ai/tokenyUI/releases/
 
 兼容版本：DeepSeek Harness 桌面版 `0.2.2-rc.1`。tokenyUI 是 Tokeny AI 发布的社区插件，不是 DeepSeek 官方插件。
 
+请使用命令中的 Release `.tgz` 地址。不要把 GitHub 仓库地址直接作为包源；pnpm 可能会把这种地址解析为 Git SSH 地址。
+
 ## 推荐发布结构
 
 1. 先说清问题：项目、文件和会话放在同一个工作区外壳里，更容易浏览和切换。

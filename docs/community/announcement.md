@@ -14,6 +14,8 @@ Screenshots and source: <https://github.com/tokeny-ai/tokenyUI>
 
 Compatibility: DeepSeek Harness desktop `0.2.2-rc.1`. tokenyUI is a Tokeny AI community plugin, not an official DeepSeek plugin.
 
+Use the Release `.tgz` URL in the command. Do not pass the repository URL as the package source; pnpm can resolve that form through Git SSH.
+
 ## Suggested post structure
 
 1. Lead with the problem: projects, files, and sessions are easier to scan when they share one workspace shell.
