@@ -1,10 +1,14 @@
 # tokenyUI
 
+English | [中文](README.zh.md)
+
 Tokeny-style workspace UI for DeepSeek Harness desktop. The plugin keeps the native DeepSeek logo and window controls, then adds project switching, a workspace file tree, project-scoped sessions, Tokeny themes, and an input companion.
 
 > **Community plugin:** tokenyUI is published by Tokeny AI and is not an official DeepSeek plugin. It does not change the DeepSeek logo or send model requests of its own.
 
-![tokenyUI workspace](packages/client/tokeny-ui/src/desktop/assets/hero.png)
+<p align="center">
+  <img src="packages/client/tokeny-ui/src/desktop/assets/hero.png" alt="tokenyUI workspace" width="960" />
+</p>
 
 ## What it adds
 
@@ -16,11 +20,17 @@ Tokeny-style workspace UI for DeepSeek Harness desktop. The plugin keeps the nat
 | Appearance | Choose Tokeny palettes plus Light, Dark, or System mode. |
 | Input companion | Choose one of seven local sprite pets and control sleep, walking, and visibility. |
 
-![Project switcher](packages/client/tokeny-ui/src/desktop/assets/project-switcher.png)
+<p align="center">
+  <img src="packages/client/tokeny-ui/src/desktop/assets/project-switcher.png" alt="Project switcher" width="760" />
+</p>
 
-![Themes and appearance](packages/client/tokeny-ui/src/desktop/assets/themes.png)
+<p align="center">
+  <img src="packages/client/tokeny-ui/src/desktop/assets/themes.png" alt="Themes and appearance" width="620" />
+</p>
 
-![Input companion](packages/client/tokeny-ui/src/desktop/assets/pet.png)
+<p align="center">
+  <img src="packages/client/tokeny-ui/src/desktop/assets/pet.png" alt="Input companion" width="640" />
+</p>
 
 ## Install the desktop release
 
