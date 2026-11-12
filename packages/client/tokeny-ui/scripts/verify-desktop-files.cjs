@@ -74,6 +74,17 @@ const primitive = new Proxy({ classifyFileType: () => 'text' }, { get(target, ke
 } });
 const noEffect = () => {};
 const store = {
+  createSnapshotStore: initial => {
+    let state = initial;
+    const listeners = new Set();
+    const notify = () => { for (const listener of [...listeners]) listener(); };
+    return {
+      getSnapshot: () => state,
+      subscribe: fn => { listeners.add(fn); return () => listeners.delete(fn); },
+      update: mutator => { const draft = Array.isArray(state) ? [...state] : { ...state }; mutator(draft); state = draft; notify(); },
+      set: next => { state = next; notify(); },
+    };
+  },
   defineStore: spec => ({ create: () => { let state = spec.init(); const listeners = new Set(); return { getSnapshot: () => state, subscribe: fn => { listeners.add(fn); return () => listeners.delete(fn); }, actions: Object.fromEntries(Object.entries(spec.actions).map(([name, fn]) => [name, (...args) => { fn(state, ...args); for (const listener of listeners) listener(); }])) }; } }),
 };
 function loadBundle(filename, extra = '') {
@@ -119,7 +130,14 @@ const translate = key => dictionaries.get('tokenyUI.files')[key] ?? key;
 const renderFactorySlot = (name, input) => { assert.equal(name, 'sidebar.files.tree'); return React.createElement(factory, { ...input, t: factoryTranslate, useFactorySlot: (name, fallback) => fallback }); };
 let snapshot;
 const Component = registration.component;
-function element() { return React.createElement(Component, { ...callbacks, workspaceId: 'project-a', useSessions: selector => selector(snapshot), renderFactorySlot, t: translate }); }
+function element() {
+  const sessionId = Object.values(snapshot?.byId ?? {})[0]?.id;
+  const sessions = {
+    ...snapshot,
+    byId: Object.fromEntries(Object.values(snapshot?.byId ?? {}).map(row => [row.id, row])),
+  };
+  return React.createElement(Component, { ...callbacks, workspaceId: 'project-a', sessionId, useSessions: selector => selector(sessions), renderFactorySlot, t: translate });
+}
 const ok = entries => ({ ok: true, value: { entries, truncated: false } });
 const root = 'D:/项目 空格';
 const file = 'a #?%中文.md';
